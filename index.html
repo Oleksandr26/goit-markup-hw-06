@@ -489,7 +489,7 @@
             <div class="modal-wrap">
               <input
                 type="tel"
-                name="tel"
+                name="user-tel"
                 id="tel"
                 class="modal-input"
                 required
@@ -515,11 +515,24 @@
             class="comments"
             placeholder="Введите текст"
           ></textarea>
-          <label class="chekbox">
-            <input type="checkbox" class="" />Соглашаюсь с рассылкой и принимаю
-            <a href="">Условия договора</a>
-          </label>
-          <button type="submit">Отправить</button>
+          <div>
+            <input
+              type="checkbox"
+              name="privacy"
+              class="modal-check visually-hidden"
+              id="privacy"
+              value="privacy"
+            />
+            <label for="privacy" class="check-text"
+              ><span class="check-wrap"
+                ><svg class="privacy-icon" width="16" height="15">
+                  <use href="./images/icons.svg#check"></use></svg
+              ></span>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="" class="agreement">Условия договора</a></label
+            >
+          </div>
+          <button type="submit" class="modal-btn">Отправить</button>
         </form>
       </div>
     </div>
